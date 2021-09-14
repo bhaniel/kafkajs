@@ -1,0 +1,19 @@
+{
+  "verbose": true,
+  "watch": [
+    "src/**/*.ts"
+  ],
+  "events": {
+    "restart": "notify -t 'nodemon' -m \"App restarted due to:'$FILENAME'\""
+  },
+  "ext": "ts",
+  "ignore": [
+    "src/**/*.spec.ts",
+    ".git",
+    "node_modules"
+  ],
+  "exec": "npm run start:typescript:debug",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
